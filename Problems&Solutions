@@ -1,0 +1,20 @@
+001 
+  P: Youtube video doesn't work on Fedora32 Firefox 
+    ('Your browser does not currently recognize any of the video formats available')  
+  S: Type in Terminal: dnf install ffmpeg 
+    (https://appuals.com/fix-your-browser-does-not-currently-recognize-any-of-the-video-formats-available/ ) 
+002
+  P: Fedora32 on Macbook doesn't install wifi driver
+    (broadcom-wl driver not installed)
+  S: Type in Terminal: dnf update  
+    (--enablerepo=updates-testing wpa_supplicant)
+    (https://ask.fedoraproject.org/t/cant-connect-to-wifi-after-update-bcm4360-with-broadcom-wl-driver/482/23 )
+003
+  P: The difference of Gnome and KDE desktop environment  
+  S: https://www.diffen.com/difference/GNOME_vs_KDE  
+004
+  P: Turning off SELinux Alert 
+  S: Type in Terminal: nano /etc/selinux/config 
+     Find and change the SELINUX option to: SELINUX=disabled
+    (https://www.revsys.com/writings/quicktips/turn-off-selinux.html)
+    (https://www.techrepublic.com/article/how-to-solve-selinux-issues-with-ease-using-selinux-alert-browser/ )
