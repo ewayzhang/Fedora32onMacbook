@@ -14,7 +14,9 @@
   S: https://www.diffen.com/difference/GNOME_vs_KDE  
 004
   P: Turning off SELinux Alert 
-  S: Type in Terminal: nano /etc/selinux/config 
+  S: type in Terminal: su 
+     and type the pasword to log in as the root user
+     Type in Terminal: nano /etc/selinux/config 
      Find and change the SELINUX option to: SELINUX=disabled
     (https://www.revsys.com/writings/quicktips/turn-off-selinux.html)
     (https://www.techrepublic.com/article/how-to-solve-selinux-issues-with-ease-using-selinux-alert-browser/ )
