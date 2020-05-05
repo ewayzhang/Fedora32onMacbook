@@ -29,7 +29,27 @@
       then select iBus, click preference and add new language 
       Step5 Reboot
 006 
+  P: Auto start with Fedora disk rather than MacOS 
+  S: Press and hold the Option (Alt) key immediately after turning on or restarting your Mac 
+     Release the Option key when you see the Startup Manager window 
+     "Press and hold the Control key", select your startup disk, then click the arrow or press Return 
+      Your selection will be saved in Startup Disk preferences, it will persist until you change it.
+007 
+  P: For battery optimizations 
+  S: In Terminal: sudo dnf install powertop
+                  sudo nano /etc/systemd/system/powertop.service
+     Create the content below then press 'Control' and 'S' key:
+        [Unit]
+        Description=Powertop tunings
+        
+        [Service]
+        Type=oneshot
+        ExecStart=/sbin/powertop --auto-tune
+        
+        [Install]
+        WantedBy=multi-user.target
+    After save the file, in Terminal:  sudo systemctl enable powertop.service 
+    (http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook/)
+008  
   P:
-  s: 
-  
-  
+  S:  
