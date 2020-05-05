@@ -20,3 +20,16 @@
      Find and change the SELINUX option to: SELINUX=disabled
     (https://www.revsys.com/writings/quicktips/turn-off-selinux.html)
     (https://www.techrepublic.com/article/how-to-solve-selinux-issues-with-ease-using-selinux-alert-browser/ )
+005
+  P:  Install other input languages (eg.CN)
+  S:  Step1 in Terminal: sudo yum -y install ibus
+      Step2 in Terminal: sudo yum -y install im-chooser
+      Step3 in Terminal: sudo yum -y install lbus-libpinyin
+      Step4 Open a new Terminal and type: im-chooser
+      then select iBus, click preference and add new language 
+      Step5 Reboot
+006 
+  P:
+  s: 
+  
+  
