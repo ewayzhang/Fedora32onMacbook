@@ -51,5 +51,17 @@
     After save the file, in Terminal:  sudo systemctl enable powertop.service 
     (http://gleek.github.io/blog/2017/04/09/installing-fedora-on-macbook/)
 008  
-  P:
+  P: Check default display manager on Fedora 32
+  S: In Terminal: ls -al /etc/systemd/system/display-manager.service
+     It will show which display-manager service is in use
+009 
+  P: Run a terminal when the interface is crushed and doesn't display anything
+  S: Press "Ctrl+Alt+F2 (orF1/F3)" to open a terminal.
+010
+  P:  
   S:  
+011
+  P:  
+  S:  
+  
+
